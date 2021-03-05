@@ -1,202 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html,body{
-    display: grid;
-    height: 100%;
-    place-items: center;
+/* For responsiveness */
+@media(min-width:768px){
+    .section-container{
+        display:flex;
+        align-items:flex-start;
+    }
 }
-::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 25px;
+.section-container div{
+    border:1px gray solid;
+    padding:10px;
 }
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
+#main-content{
+    flex:2;
 }
-::-webkit-scrollbar-thumb{
-    background: #ddd;
+#side-box{
+    flex:1;
 }
-
-::-webkit-scrollbar-thumb:hover{
-    background: #ccc;
-}
-.chatbot-wrapper{
-    width: 370px;
-    background: gray;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    border-top: 0px;
-}
-.chatbot-wrapper .title{
-    background: black;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    border-radius: 5px 5px 0 0;
-}
-.chatbot-wrapper .form{
-    padding: 20px 15px;
-    min-height: 400px;
-    max-height: 400px;
-    overflow-y: auto;
+#box-1{
+    flex:1;
 }
 
-.chatbot-wrapper .form .inbox{
-    width: 100%;
-    display: flex;
-    align-items: baseline;
+#box-2{
+    flex:1;
 }
 
-.chatbot-wrapper .form .inbox .icon{
-    height: 50px;
-    width: 50px;
-    color: black;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
-    background:gray;
-}
-.chatbot-wrapper .form .user-inbox{
-    justify-content: flex-end;
-    margin: 13px, 0;
-}
-.chatbot-wrapper .form .inbox .msg-header{
-    max-width: 70%;
-    margin-left: 10px;
-} 
-.form .inbox .msg-header p{
-    color: black;
-    background: white;
-    border-radius: 5px;
-    padding: 8px 10px;
-    font-size: 14px;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
-.form .user-inbox .msg-header p{
-    color: black;
-    background: darkgray;
-}
-.chatbot-wrapper .typing-field{
-    display: flex;
-    height: 60px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    background: white;
-    border-top: 1px solid white;
-    border-radius: 0 0 5px 5px;
-}
-.chatbot-wrapper .typing-field .input-data{
-    height: 40px;
-    width: 335px;
-    position: relative;
-}
-.chatbot-wrapper .typing-field .input-data input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: 1px solid transparent;
-    padding: 0 80px 0 15px;
-    border-radius: 3px;
-    font-size: 15px;
-    color: black;
-    transition: all 0.3s ease;
-}
-.typing-field .input-data input:focus{
-    border-color: black;
-}
-.input-data input::placeholder{
-    color: gray;
-    transition: all 0.3s ease;
-}
-.input-data input:focus::placeholder{
-    color: lightgray;
-}
-.chatbot-wrapper .typing-field .input-data button{
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    height: 30px;
-    width: 65px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    border-radius: 3px;
-    background: darkgray;
-    border: 1px solid lightgray;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-}
-.chatbot-wrapper .typing-field .input-data input:valid ~ button{
-    opacity: 1;
-    pointer-events: auto;
-}
-.typing-field .input-data button:hover{
-    background: black;
+#box-3{
+    flex:1;
 }
 
-
-
-
-#show-emoji{
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
-.tiblock {
-    align-items: center;
-    display: flex;
-    height: 17px;
+#box-4{
+    flex:1;
 }
 
-.ticontainer .tidot {
-    background-color: black;
-}
-
-.tidot {
-    -webkit-animation: mercuryTypingAnimation 1s infinite ease-in-out;
-    border-radius: 50%;
-    height: 5px;
-    margin-right: 2px;
-    width: 5px;
-}
-.prompt{
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 3px;
-}
-@-webkit-keyframes mercuryTypingAnimation{
-0%{
-  -webkit-transform:translateY(0px)
-}
-28%{
-  -webkit-transform:translateY(-5px)
-}
-44%{
-  -webkit-transform:translateY(0px)
-}
-}
-
-.tidot:nth-child(1){
--webkit-animation-delay:100ms;
-}
-.tidot:nth-child(2){
--webkit-animation-delay:200ms;
-}
-.tidot:nth-child(3){
--webkit-animation-delay:300ms;
-}
