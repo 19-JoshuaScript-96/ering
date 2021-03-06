@@ -6,7 +6,7 @@
 @media(min-width:768px){
     .header-container{
         margin: 0px;
-        background:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url('for-claudia.webp')no-repeat center;
+        background:linear-gradient(to right, rgba(0,0,0,0), black), url('for-claudia.webp')no-repeat center;
         background-size: cover;
         height: 500px;
         position: relative;
