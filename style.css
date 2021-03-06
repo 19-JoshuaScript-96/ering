@@ -9,14 +9,16 @@
         width:100%;
         height: 800px;
         display: flex;
-        text-align: center;
-        color: white;
-        background:url('for-claudia.webp') no-repeat cover;
+        background:url('for-claudia.webp');
     }
     .section-container{
         display:flex;
         align-items:flex-start;
     }
+}
+#header-content{
+    text-align: center;
+    color: white;
 }
 .button{
     background-color: lightgray;
