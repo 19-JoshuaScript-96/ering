@@ -9,8 +9,9 @@
         background:linear-gradient(to right, rgba(0,0,0,0), black), url('for-claudia.webp')no-repeat center;
         background-size: cover;
         height: 500px;
-        position: relative;
         display: flex;
+        justify-content: space-between;
+        align-items: right;
     }
     .section-container{
         display:flex;
