@@ -6,7 +6,7 @@
 @media(min-width:768px){
     .header-container{
         margin: 0px;
-        background:linear-gradient(to right, rgba(0,0,0,0), black), url('for-claudia.webp')no-repeat center;
+        background:linear-gradient(to right, rgba(0,0,0,0), black), url('header-joshua-script.webp')no-repeat center;
         background-size: cover;
         height: 500px;
         display: flex;
@@ -43,7 +43,9 @@
   color: black;  
   border-radius:25px;
 }
-
+.invisible{
+    border:none;
+}
 .section-container div{
     border:1px gray solid;
     padding:10px;
